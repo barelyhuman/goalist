@@ -17,21 +17,23 @@ jobs:
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
         run: echo "$GITHUB_CONTEXT"
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
         with:
           fetch-depth: 1
       - name: Use Node.js 10.x
         uses: actions/setup-node@v1
         with:
-          node-version: 10.x
+          node-version: 12.x
       - name: yarn install
         run: |
           yarn install
+          yarn postinstall
       - name: Publish
         run: |
-          yarn run build
+          yarn build
       - name: Cleanup artifacts
         run: |
+          npm i rimraf
           npx rimraf "dist/!(*.exe|*.deb|*.AppImage|*.dmg)"
       - name: Upload artifacts
         uses: actions/upload-artifact@v1

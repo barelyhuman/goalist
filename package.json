@@ -3,7 +3,7 @@
   "name": "goalist",
   "description": "Simple Electron app to manage savings for certain goals",
   "version": "1.0.0",
-  "author": "siddharth gelera <sidgroks@gmail.com>",
+  "author": "Siddharth Gelera <sidgroks@gmail.com>",
   "main": "app/background.js",
   "scripts": {
     "dev": "nextron",
