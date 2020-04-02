@@ -2,7 +2,7 @@
   "private": true,
   "name": "goalist",
   "description": "Simple Electron app to manage savings for certain goals",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "author": "Siddharth Gelera <sidgroks@gmail.com>",
   "main": "app/background.js",
   "scripts": {
