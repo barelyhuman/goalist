@@ -1,9 +1,9 @@
 {
   "private": true,
-  "name": "my-nextron-app",
-  "description": "My application description",
+  "name": "goalist",
+  "description": "Simple Electron app to manage savings for certain goals",
   "version": "1.0.0",
-  "author": "Yoshihide Shiono <shiono.yoshihide@gmail.com>",
+  "author": "siddharth gelera <sidgroks@gmail.com>",
   "main": "app/background.js",
   "scripts": {
     "dev": "nextron",
