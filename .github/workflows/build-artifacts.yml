@@ -33,7 +33,6 @@ jobs:
           yarn build
       - name: Cleanup artifacts
         run: |
-          npm i rimraf
           npx rimraf "dist/!(*.exe|*.deb|*.AppImage|*.dmg)"
       - name: Upload artifacts
         uses: actions/upload-artifact@v1
